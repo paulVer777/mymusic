@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<meta lang="pl">
+
+<head>
+
+<meta charset="utf-8">
+<title> myMusic</title>
+
+<meta name="description" content="Strona poświęcona muzyce, i nie tylko. Zapraszam, może Cię zainspiruję."/>
+<meta name="keywords" content="Muzyka, relaks, spokój, rozwój"/>
+
+<link rel="stylesheet" href="myMusicStyl.css" type="text/css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Bahiana|Monofett|Ruthie|Source+Code+Pro|Tenali+Ramakrishna" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+
+
+window.onload=slajder;
+
+
+
+
+function schowaj()
+{
+
+$("#slajder1").fadeOut(2000);
+
+}
+
+
+
+
+
+var numer=1;
+
+function slajder()
+{
+
+numer++;if(numer>3) numer=1;
+var plik="<img src=\"img/slajd"+numer+".jpg\"/>"
+document.getElementById("slajder1").innerHTML=plik;
+setTimeout("slajder()",10000);
+$("#slajder1").fadeIn(2000);
+setTimeout("schowaj()",8000);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+
+
+<body>
+
+<div class="wrapper">
+
+  <header>
+  
+  <div class="l1">
+    
+   
+	
+	<div class="logo">
+	
+	<div class="p"><img src="music.jpg" style="float:left;"></img></div>
+	myMusic
+	</div>
+	<div style="clear:both"></div>
+  
+	 </div> 
+	  
+	
+    <nav>
+
+	<div class="menu">
+	
+    <ol>
+	  <li><a href="#">Strona Główna</a></li>
+	  <li><a href="#">Muzyka</a></li>
+	  <li><a href="#">Rozwój</a></li>
+	  <li><a href="#">Cytaty</a></li>
+	  <li><a href="#">O autorze</a></li>
+	  <li><a href="#">Kontakt</a></li>
+	   <div style="clear:both"></div>
+	 </ol>
+
+    </div>
+
+
+    </nav>	
+
+	
+	<div id="slajder1"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ </header> 
+	
+	
+	    
+
+
+  
+  <main>
+  
+  <div class="container">
+  
+  <h2>Witaj, rozgość się i zanurz w nicości :) </h2>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dui mauris, blandit at dui id, dictum dictum enim. Nunc ante ex, facilisis sit amet tortor sit amet, posuere bibendum eros. Nunc ac congue magna. Aenean dignissim turpis non ipsum volutpat accumsan. Morbi posuere sem sem, non lobortis libero tristique ut. Nam scelerisque ultrices lectus ac pulvinar. Integer suscipit, mauris sed egestas facilisis, quam massa porttitor tellus, in auctor massa nisl finibus tortor. Mauris eget eleifend odio. Sed finibus dictum dignissim. Mauris facilisis finibus leo non iaculis. Vestibulum et suscipit mauris. Vivamus venenatis viverra dolor, eget posuere quam pretium at. Donec interdum tellus ut orci egestas, sed sollicitudin justo posuere. Cras eu rutrum enim. Aenean fermentum nisi eu magna hendrerit, sit amet ornare nulla tempor. Vivamus et purus quis nisl mattis vestibulum.</p>
+
+  <p>Proin tortor arcu, bibendum malesuada ipsum vitae, euismod congue diam. Nunc et rhoncus neque. Morbi porta ex quis nunc consequat, sed tincidunt orci rhoncus. Fusce eu turpis scelerisque, accumsan ante pellentesque, tempor orci. Fusce venenatis leo arcu, non finibus ipsum iaculis et. Quisque at pulvinar odio. Aenean pretium lacus elit, sit amet placerat nulla commodo non. Nullam malesuada lorem in dolor interdum cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vehicula est ante, nec convallis elit fermentum vitae. Mauris venenatis in tellus in fermentum. Nulla commodo, ante sed viverra aliquet, velit lacus rhoncus eros, sit amet efficitur ex dolor ac lorem. Mauris sit amet eros ac ipsum suscipit fringilla at ac justo. Maecenas ornare velit enim, at convallis odio eleifend ut. Integer non quam sed velit finibus ultrices sit amet non risus. Donec varius mi leo, et pulvinar nunc vulputate vitae.</p>
+  
+  
+  
+  </div>
+  
+  
+  </main>
+
+
+  <footer>
+  
+  <div class="socials">
+  
+    <a href="#" class="s"><div class="fb"><i class="icon-facebook-rect"></i></div></a>
+    <a href="#" class="s"><div class="tw"> <i class="icon-twitter"></i></div></a>
+    <a href="#" class="s"><div class="yt"><i class="icon-youtube"></i></div></a>
+    <a href="#" class="s"><div class="gplus"><i class="icon-googleplus-rect"></i></div></a>
+    <div style="clear:both"></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <div class="info"> Strona powstała w 2018r &copy Wszelkie prawa zastrzeżone.
+  
+  
+  </footer>
+  
+  
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
